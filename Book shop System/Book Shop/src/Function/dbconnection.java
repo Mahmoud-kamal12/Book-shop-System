@@ -15,6 +15,7 @@ public class dbconnection {
        Connection dbcon = null;
     try
     {
+     // dbcon = DriverManager.getConnection("jdbc:sqlite:shopdb.sqlite");    //  use this to connect sqlite
         dbcon = (Connection) DriverManager.getConnection(this.dbURL, this.username, this.password);
     }catch (SQLException se)
     {
